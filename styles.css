@@ -1,0 +1,50 @@
+img {
+    width: 400px;
+    height: auto;
+}
+
+.emote-base{
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures it behaves like a block element for positioning */
+    position: fixed; /* Positions it relative to the viewport */
+    z-index: 1000; /* Ensures it stays on top of other content */
+    border-radius: 50%; /* Makes it circular */
+}
+
+#spotify-emote{
+    width: 110px; /* Adjust as needed for your desired size */
+    bottom: 34px; /* Distance from the bottom of the viewport */
+    right: 10px; /* Distance from the right of the viewport (or left) */
+}
+
+#youtube-emote{
+    width: 80px; /* Adjust as needed for your desired size */
+    bottom: 10px; /* Distance from the bottom of the viewport */
+    right: 120px; /* Distance from the right of the viewport (or left) */
+
+    
+}
+
+#x-emote{
+    width: 80px; /* Adjust as needed for your desired size */
+    bottom: 10px; /* Distance from the bottom of the viewport */
+    right: 200px; /* Distance from the right of the viewport (or left) */
+}
+.main-header {
+    background-image: url(images/HEADER\ ANSON.png); /* Corrected: Changed backslash to forward slash */
+    /* background-size: cover; Removed to use original image size (auto is default) */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Changed to show the top half of the image */
+    height: 400px; /* Adjust height as needed to show your image as a cover */
+    display: flex; /* Use flexbox to center content vertically/horizontally */
+    flex-direction: column;
+    justify-content: flex-start; /* Align nav to top */
+    align-items: center;
+    color: white; /* Ensure text is visible against a dark background */
+    text-align: center;
+    padding-top: 20px; /* Padding for the nav */
+    box-shadow: 0 44px 10px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: 100% auto;
+}
