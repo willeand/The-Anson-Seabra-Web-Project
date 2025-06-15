@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 325;
+    font-style: normal;
+}
+
+.main-header {
+    background-image: url(images/HEADER\ ANSON.png); /* Corrected: Changed backslash to forward slash */
+    /* background-size: cover; Removed to use original image size (auto is default) */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: 100% auto;
+    background-position: center; /* Changed to show the top half of the image */
+    height: 400px; /* Adjust height as needed to show your image as a cover */
+
+    display: flex; /* Use flexbox to center content vertically/horizontally */
+    flex-direction: column;
+    justify-content: flex-start; /* Align nav to top */
+    align-items: flex-end;
+
+    color: white; /* Ensure text is visible against a dark background */
+    text-align: center;
+    box-shadow: 0 44px 10px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 0;
+    
+}
+
+nav {
+}
+
+.main-nav{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.main-nav li {
+    font-size: x-large;
+    margin: 0px 15px;
+    
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;;
+}
+
+.main-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    color: #007bff; /* Example: Change text color to a bright blue on hover */
+    /* Add a smooth transition for text color */
+    transition: color 0.3s ease;
+}
+
+
+
+
 img {
     width: 400px;
     height: auto;
@@ -29,22 +101,4 @@ img {
     width: 80px; /* Adjust as needed for your desired size */
     bottom: 10px; /* Distance from the bottom of the viewport */
     right: 200px; /* Distance from the right of the viewport (or left) */
-}
-.main-header {
-    background-image: url(images/HEADER\ ANSON.png); /* Corrected: Changed backslash to forward slash */
-    /* background-size: cover; Removed to use original image size (auto is default) */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Changed to show the top half of the image */
-    height: 400px; /* Adjust height as needed to show your image as a cover */
-    display: flex; /* Use flexbox to center content vertically/horizontally */
-    flex-direction: column;
-    justify-content: flex-start; /* Align nav to top */
-    align-items: center;
-    color: white; /* Ensure text is visible against a dark background */
-    text-align: center;
-    padding-top: 20px; /* Padding for the nav */
-    box-shadow: 0 44px 10px rgba(0, 0, 0, 0.2);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-size: 100% auto;
 }
