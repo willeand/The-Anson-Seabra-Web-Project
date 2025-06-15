@@ -3,6 +3,7 @@
 html, body{
     margin: 0;
     padding: 0;
+   background-color: #FFE5B4;
 }
 
 *{
@@ -24,7 +25,6 @@ html, body{
     display: flex; /* Use flexbox to center content vertically/horizontally */
     flex-direction: column;
     justify-content: flex-start; /* Align nav to top */
-    align-items: flex-end;
 
     color: white; /* Ensure text is visible against a dark background */
     text-align: center;
@@ -35,17 +35,38 @@ html, body{
     
 }
 
-nav {
+#about-me {
+  background-color: #ffffff;
+  color: #000000;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.left-side-img{
+
+}
+
+.main-header h1 {
+  display: flex;
+  flex-direction: row; /* default, but good to be explicit */
+  justify-content: flex-start; /* aligns items to the left */
+  align-items: center;
+  padding: 10px 40px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 40%;
 }
 
 .main-nav{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 40px;
-    border-radius: 5px;
-    max-width: 800px;
-    width: 90%;
+  align-self: flex-end;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0;
 }
 
 .main-nav li {
