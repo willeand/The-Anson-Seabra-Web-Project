@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 html, body{
     margin: 0;
     padding: 0;
    background-color: #FFE5B4;
+   background-image: url(images/ocean\ splash.jpg)
+}
+
+.sig{
+   font-family: "Cedarville Cursive";
+   font-size: 68px;
+   display: flex;
+     margin: 0; /* Remove default margin from the h1 */
+    padding: 0; /* Remove default padding from the h1 */
+    position: absolute; /* Take the h1 out of the normal document flow */
+    top: 0; /* Position it 0 pixels from the top edge */
+    left: 0; /* Position it 0 pixels from the left edge */
+    
 }
 
 *{
@@ -19,8 +34,8 @@ html, body{
     /* background-size: cover; Removed to use original image size (auto is default) */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-size: 100% auto;
-    background-position: center; /* Changed to show the top half of the image */
-    height: 400px; /* Adjust height as needed to show your image as a cover */
+    background-position: 39% 39%; /* Changed to show the top half of the image */
+    height: 225px; /* Adjust height as needed to show your image as a cover */
 
     display: flex; /* Use flexbox to center content vertically/horizontally */
     flex-direction: column;
@@ -46,6 +61,9 @@ html, body{
 }
 
 .left-side-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -105,15 +123,15 @@ img {
 }
 
 #spotify-emote{
-    width: 110px; /* Adjust as needed for your desired size */
-    bottom: 34px; /* Distance from the bottom of the viewport */
-    right: 10px; /* Distance from the right of the viewport (or left) */
+    width: 77px; /* Adjust as needed for your desired size */
+    bottom: 10px; /* Distance from the bottom of the viewport */
+    right: 39px; /* Distance from the right of the viewport (or left) */
 }
 
 #youtube-emote{
     width: 80px; /* Adjust as needed for your desired size */
     bottom: 10px; /* Distance from the bottom of the viewport */
-    right: 120px; /* Distance from the right of the viewport (or left) */
+    right: 118px; /* Distance from the right of the viewport (or left) */
 
     
 }
@@ -122,4 +140,39 @@ img {
     width: 80px; /* Adjust as needed for your desired size */
     bottom: 10px; /* Distance from the bottom of the viewport */
     right: 200px; /* Distance from the right of the viewport (or left) */
+}
+
+.tour-list{
+     display: block;
+    max-width: 3000px; /* Optional: Limit overall width for readability */
+    margin: 20px auto; /* Centers the entire list on the page */
+    padding: 100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+    color: white; /* Make text color contrast well */
+    padding: 0.2em 0.4em; /* Add a little space around the text */
+    border-radius: 3px; /* Optional: slightly rounded corners */
+}
+
+.tour-item {
+    display: grid; /* This is the key: makes it a grid container */
+
+    /* Defines the columns for Venue | Location | Date | Action
+       - 2.5fr: Flexible width for the Venue column
+       - 1.5fr: Flexible width for the Location column
+       - 140px: Fixed width for the Date column (ensures vertical alignment)
+       - 120px: Fixed width for the Action button column (for consistent button placement)
+       Adjust these values if you need different column proportions. */
+    grid-template-columns: 3fr 1fr 1.5fr 1fr;
+    gap: 160px; /* Space between the columns within this row */
+
+    align-items: center; /* Vertically centers content in each grid cell */
+
+    padding: 10px 0; /* Minimal padding above and below each row item */
+    /* If you want a line between each row, use border-bottom here: */
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.tour-class-column{
+    color: white;
 }
