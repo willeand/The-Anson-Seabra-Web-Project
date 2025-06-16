@@ -176,3 +176,22 @@ img {
 .tour-class-column{
     color: white;
 }
+
+.ticket-button {
+    display: inline-block; /* Allows setting padding and other box model properties */
+    padding: 10px 20px;    /* Good, spacious padding for easy clicking */
+
+    background-color: white; /* White background */
+    color: #333;           /* Dark gray text for good contrast on white */
+
+    text-decoration: none; /* Removes underline from links */
+    border: 1px solid #ccc; /* A subtle light gray border to define its shape */
+    border-radius: 5px;    /* Slightly rounded corners for a softer look */
+
+    font-size: 1em;        /* Standard font size relative to parent */
+    font-weight: bold;     /* Makes the text stand out */
+    white-space: nowrap;   /* Prevents the text from wrapping onto multiple lines */
+
+    cursor: pointer;       /* Indicates it's clickable */
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; /* Smooth transitions for hover */
+}
